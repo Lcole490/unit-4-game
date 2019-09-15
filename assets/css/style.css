@@ -1,0 +1,38 @@
+/* Set size of master container */
+.maincontainer{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.my-row{
+    border: 1px solid black;
+    height: 300px;
+    color: black;
+}
+
+
+.my-row3{
+    border: 1px solid black;
+    height: 300px;
+    color: black;
+}
+
+.arena{
+    width: 100%;
+    max-width: 960px;
+    height: 800px;
+    /* background-image: url("../images/wheelbanner.jpg");
+    background-repeat: no-repeat;
+    background-size: 920px 700px; */
+    /* background-color: rgb(233, 224, 224); */
+    border:  dashed rgb(27, 113, 124) 10px;
+}
+
+.my-col img{
+
+    width: 200px;
+    height: 200px;
+
+}
