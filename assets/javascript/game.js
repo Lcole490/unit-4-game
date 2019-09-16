@@ -14,29 +14,6 @@ var crystalsrcs= ["./assets/images/diamond3.jpg",
 console.log(crystalsrcs);
 
 
-// for (var i=0; i < 4; i++){
-    
-//     var crystalDiv = $("<div>");
-//     crystalDiv.addClass("col-3 my-col");
-
-//     var imageCrystal =$("<img>");
-//     imageCrystal.addClass("crystal-image");
-
-//     imageCrystal.attr("src", crystalsrcs[i]);
-
-//     imageCrystal.attr("data-crystalvalue", numberOptions[i]);
-
-//     $(".my-row3").append(imageCrystal);
-
-// console.log(imageCrystal);
-// console.log(i);
-// }
-
-
-
-
-
-
 
 function beginGame(){
 
@@ -72,6 +49,11 @@ if (userCounter === targetNumber){
     wins++;
     document.getElementById("wins").textContent = wins;
 
+    userCounter=0;
+
+    $("#currentValue").html("<h1>" + userCounter + "</h1>");
+
+
     beginGame();
 
 }
@@ -80,6 +62,10 @@ else if (userCounter > targetNumber){
     alert("You Lose!");
     losses++;
     document.getElementById("losses").textContent = losses;
+
+    userCounter=0;
+
+    $("#currentValue").html("<h1>" + userCounter + "</h1>");
 
     beginGame();
 }
@@ -92,22 +78,6 @@ else if (userCounter > targetNumber){
 $(document).ready(function(){
 
 
-// for (var i=0; i < 4; i++){
-    
-//     var crystalDiv = $("<div>");
-//     crystalDiv.addClass("col-3 my-col");
-
-//     var imageCrystal =$("<img>");
-//     imageCrystal.addClass("crystal-image");
-
-//     imageCrystal.attr("src", crystalsrcs[i]);
-
-//     imageCrystal.attr("data-crystalvalue", numberOptions[i]);
-
-//     $(".my-row3").append(imageCrystal);
-
-
-// }
 
 beginGame();
 
@@ -140,11 +110,16 @@ userCounter += crystalValue;
 console.log(crystalValue);
 $("#currentValue").html("<h1>" + userCounter + "</h1>");
 
+
+
+winOrLose();
+
+
 });
 
 
 
-winOrLose();
+
 
 
 
