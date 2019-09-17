@@ -1,20 +1,41 @@
 /* Set size of master container */
 .maincontainer{
-    width: 960px;
+    width: 880px;
     margin-left: auto;
     margin-right: auto;
+    
+}
+
+
+
+.jumbotron{
+    background-image: url("../images/Securitybanner.jpg");
+    background-repeat: no-repeat;
+    background-size: 920px 700px;
+    color: white;
+    font-weight: bolder;
+
 }
 
 
 .my-row{
-    border: 1px solid black;
-    height: 300px;
-    color: black;
+    /* border: 1px solid black; */
+    height: 170px;
+    color:black;
+    font-weight: bolder;
+       
+}
+
+.my-row2{
+
+    color:white;
+    font-weight: bolder
+
 }
 
 
 .my-row3{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 300px;
     color: black;
 }
@@ -23,11 +44,11 @@
     width: 100%;
     max-width: 960px;
     height: 800px;
-    /* background-image: url("../images/wheelbanner.jpg");
+    background-image: url("../images/vault1.jpg"); 
     background-repeat: no-repeat;
-    background-size: 920px 700px; */
+    background-size: 940px 380px; 
     /* background-color: rgb(233, 224, 224); */
-    border:  dashed rgb(27, 113, 124) 10px;
+    /* border:  dashed rgb(30, 91, 161) 10px; */
 }
 
 .crystal-image{
